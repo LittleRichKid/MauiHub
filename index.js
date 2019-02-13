@@ -1,5 +1,5 @@
 const Discrod = require('discord.js');
-const Bot = new Discrod.Client();
+const Bot = new Discrod.Client;
 const TOKEN = process.env.BOT_TOKEN;
 
 Bot.on('ready', () => {
