@@ -22,7 +22,7 @@ Bot.on('message', message => {
         .setColor('#007FFF')
         .setAuthor('Maui')
 
-        Bot.channels.find(x => x.name === 'session-announcments')
+        chan.send(embed);
         message.delete();
     };
 
