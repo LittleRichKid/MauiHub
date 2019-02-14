@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const Bot = new Discord.Client();
 const TOKEN = process.env.BOT_TOKEN;
-const Prefix = '.'
+const Prefix = ';'
 
 Bot.on('ready', () => {
     console.log('Bot is activated.');
@@ -22,7 +22,7 @@ Bot.on('message', message => {
         .setColor('#007FFF')
         .setAuthor('Maui')
 
-        chan.send(embed);
+        Bot.channels.find(x => x.name === 'session-announcments')
         message.delete();
     };
 
